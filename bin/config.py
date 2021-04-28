@@ -44,4 +44,4 @@ motor_timeout = 15 #seconds
 ### Data File Settings ###
 ##########################
 
-data_directory = '/home/luke/ShadePullerV2/data/'
+data_directory = '/home/luke/ShadePuller/data/'

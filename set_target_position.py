@@ -24,13 +24,10 @@ elif not (0 <= target_position and target_position <= 100):
 	raise ValueError("Shade Position must be inbetween 0 and 100.")
 
 
-#ignores values that are not 0 or 100
-if target_position == 100 or target_position == 0:
 
-	#saves the current position and then prints a dummy current position
-	cache.set_target(shade_name, target_position)
-	time.sleep(config.set_target_position_delay)
-	print(target_position)
 
-else:
-	print(cache.read_position(shade_name))
+#saves the current position and then prints a dummy current position
+cache.set_target(shade_name, target_position)
+time.sleep(config.set_target_position_delay)
+
+print(cache.read_position(shade_name))

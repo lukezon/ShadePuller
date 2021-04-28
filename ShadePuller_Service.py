@@ -47,7 +47,9 @@ while True:
 			elif shade.target_pos == 0:
 				shade.move_down()
 			else:
-				pass
+				#this is where control for intermediate positions would go
+				shade.target_pos = None
+				shade.start_time = None
 
 		#logs the current shade positions to file
 		cache.set_position(shade.name, shade.current_pos)

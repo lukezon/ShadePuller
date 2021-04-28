@@ -33,7 +33,7 @@ def read_position(shade_name):
 		with open(f'{data_directory}{shade_name}_current.dat', 'r') as file:
 			position = int(file.read())
 	except:
-		position = 0
+		position = None
 
 	return position
 
